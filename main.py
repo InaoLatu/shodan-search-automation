@@ -13,9 +13,9 @@ from docx import Document
 
 SHODAN_API_KEY = ""  # Insert your SHODAN_API_KEY
 api = shodan.Shodan(SHODAN_API_KEY)
-queries = ['webcam 7  -401 http.component:"mootools"', 'fuel oil', '“DICOM Server Response" port:104']
-exploits_query = 'webcam 7'
-
+query = 'webcam 7  -401 http.component:"mootools"'  # query for automatic_search()
+exploits_query = 'webcam 7'  # for exploits_search()
+# searches parameters
 
 def automatic_search():
     document = Document()
@@ -27,8 +27,8 @@ def automatic_search():
         ' This whole document has been created by the python script used to do the automatic searches.  ')
 
     try:
-        results = api.search(query=queries[0])
-        document.add_heading('Search: ' + queries[0], level=1)
+        results = api.search(query=query)
+        document.add_heading('Search: ' + query, level=1)
         document.add_paragraph("Tables for the search")
 
         for counter, result in enumerate(results['matches']):
