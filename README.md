@@ -1,6 +1,7 @@
-# shodan-search-automation
+# shodan-search-automation to .docx 
 ### Author: Inao Latourrette 
 It builds an automatic search in Shodan (https://www.shodan.io/) and a exploits discovery search. 
+The results obtained from the searches are represented in 2 .docx files.
 
 ## Requirements 
 
