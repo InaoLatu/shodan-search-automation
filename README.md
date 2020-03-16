@@ -4,23 +4,25 @@ It builds an automatic search in Shodan (https://www.shodan.io/) and a exploits 
 The results obtained from the searches are represented in 2 .docx files and they are also printed by console.
 
 ## Requirements 
-
-1. Install python3 and pip3: 
+1. Clone this repository to your machine: 
+``` git clone https://github.com/InaoLatu/shodan-search-automation.git ```
+2. Install python3 and pip3: 
 ```
    sudo apt update
    sudo apt install python3-pip
    sudo apt-get install python3 
 ```
 
-2. Install virtualenv:
+3. Install virtualenv:
 ``` pip3 install virtualenv ```
 
-3. Create the virtualenv: 
+
+4. Inside the shodan-automation-search folder, create the virtualenv: 
 ``` virtualenv venv```
 
-4. Activate virtualenv: ``` source venv/bin/activate```
+5. Activate virtualenv: ``` source venv/bin/activate```
 
-5. Install requirements: 
+6. Install requirements: 
 ``` pip install -r requirements.txt ```
 
 ## How to use the code 
