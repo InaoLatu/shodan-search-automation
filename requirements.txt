@@ -5,7 +5,7 @@ click-plugins==1.1.1
 colorama==0.4.3
 idna==2.9
 lxml==4.5.0
-Pillow==7.0.0
+Pillow==9.0.1
 python-docx==0.8.10
 requests==2.23.0
 shodan==1.21.3
